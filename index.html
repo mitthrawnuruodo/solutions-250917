@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lesson 2 - DOM Part 2 Solutions</title>
+</head>
+<body>
+  <h1>Lesson 2 - Solutions</h1>
+  <p>Open the console to see logs.</p>
+
+  <!-- A: Events -->
+  <button id="colorBtn">Change Background</button>
+  <img id="myImg" src="https://picsum.photos/100" alt="random">
+  <div id="hoverBox" style="width:100px;height:50px;background:lightblue;margin:10px 0;">Hover me</div>
+  <input id="changeInput" placeholder="Type something">
+  <form id="simpleForm">
+    <input id="formInput" required placeholder="Enter text">
+    <button type="submit">Submit</button>
+  </form>
+  <input id="keyInput" placeholder="Press keys">
+
+  <hr>
+
+  <!-- B: Validation -->
+  <form id="signupForm" novalidate>
+    <input id="email" type="email" required placeholder="Email">
+    <input id="pwd" type="password" minlength="6" required placeholder="Password">
+    <input id="pwd2" type="password" required placeholder="Confirm password">
+    <button type="submit">Sign up</button>
+  </form>
+
+  <hr>
+
+  <!-- C: Creating/Inserting -->
+  <div id="container"></div>
+  <button id="addPara">Add Paragraph</button>
+
+  <ul id="insertList">
+    <li>One</li>
+    <li id="two">Two</li>
+    <li>Three</li>
+  </ul>
+
+  <ul id="replaceList">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+  </ul>
+
+  <ul id="removeList">
+    <li>First</li>
+    <li>Second</li>
+  </ul>
+
+  <hr>
+
+  <!-- D: To-do List -->
+  <form id="todoForm">
+    <input id="todoInput" required placeholder="Task">
+    <button type="submit">Add</button>
+  </form>
+  <ul id="todoList"></ul>
+
+  <hr>
+
+  <!-- E: Collections -->
+  <ul id="fruitList">
+    <li>Apple</li>
+    <li>Banana</li>
+  </ul>
+
+  <hr>
+
+  <!-- F: Filter & Sort -->
+  <h2>Fruit Filter</h2>
+  <input id="filterInput" placeholder="Filter fruits">
+  <button id="sortBtn">Sort</button>
+  <button id="reverseBtn">Reverse</button>
+  <button id="restoreBtn">Restore</button>
+  <ul id="bigList">
+    <li>Banana</li>
+    <li>Apple</li>
+    <li>Date</li>
+    <li>Cherry</li>
+  </ul>
+
+  <script src="solutions.js"></script>
+</body>
+</html>
